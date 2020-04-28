@@ -1,0 +1,338 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+
+
+  margin: 0;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color:#E9E4E3; */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  justify-content:flex-end;
+  font-size: calc(20px + 2vmin);
+  color: white;
+  padding-bottom: 1px;
+   min-height:100px;
+   font-style:italic;
+   font-weight: bold;
+   background-image: url("book.jpeg");
+   background-blend-mode: soft-light;
+    opacity: 0.7;
+    width:1500px;
+    position:fixed;
+    z-index: 1100;
+    left: 0; right: 0;
+top: 0;
+overflow: hidden;
+
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+.images{
+  padding: 5px;
+width: 10px;
+}
+  .image {
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+  margin:0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 10%;
+  height:10%;
+  max-height: 10%;
+  max-width: 10%;
+  margin: 20px;
+
+  display:inline-block;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.text {
+
+  word-wrap: break-word;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  overflow:inherit;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.text1 {
+
+  word-wrap: break-word;
+  color: black;
+  font-size: 25px;
+  position: relative;
+  overflow:inherit;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.iconn{
+width:65px;
+height:70px;
+padding-right:0px;
+margin: 20px;
+}
+.main1{
+  overflow: hidden;
+}
+.navigator{
+  height:20px;
+  width:90px;
+  font-size:36px;
+  margin-top:6%;
+  position:fixed;
+ height: 100%;
+ background-color: #f1f1f1;
+}
+.dictionary{
+  width: 98%;
+  height: 60px;
+  padding-top: 12px;
+  color:white;
+  background-color:  #483D8B;
+  text-align:center;
+  border:1px solid gray;
+  border-raduis:6px 8px 0px 0px;
+  text-align:inherit;
+}
+.modal-content1 {
+position: fixed;
+background-color: #fefefe;
+margin-top: 111px;
+    margin-left: 205px;
+padding: 0;
+border: 1px solid #888;
+width: 60%;
+height:40%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.6s;
+z-index: 1100;
+
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+.modal-header1 {
+
+padding: 2px 16px;
+background-color: #F3E9E7;
+color: black;
+
+
+
+}
+
+.modal-body1 {padding: 2px 16px;
+             background-color: #FDFBFB;
+           color:black;}
+
+.modal-footer1 {
+padding: 2px 16px;
+background-color: #F3E9E7;
+color: black;
+}
+
+.modall1{
+
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* ul {
+  list-style-type: none;
+  margin-top:7%%;
+  padding:0;
+  width: 110px;
+  background-color: #f1f1f1;
+  position: fixed;
+ height: 100%;
+ -ms-overflow-style: none;
+ z-index: -1;
+
+
+}
+
+li a {
+  display: block;
+  color: #000;
+
+  text-decoration: none;
+  padding: 40px 20px;
+  margin-top: 30px;
+   z-index: -1;
+} */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 70px;
+  background-color: #DCD5D3;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.innerone{
+  padding-top:15%;
+  padding-left: 20%;
+  overflow: auto;
+
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.box{
+  background-color: #fefefe;
+  margin-top: 70px;
+      margin-left: 205px;
+  padding: 0;
+  border: 3px solid #888;
+  width: 60%;
+  height:40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button1 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #483D8B;
+
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      border: 1px solid #888;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.input2 {
+  width: 80px;
+  height:82px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 24px 6px 12px 14px;
+  transition: width 0.4s ease-in-out;
+}
+
+.input2:focus {
+  width: 70%;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
